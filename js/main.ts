@@ -16,6 +16,19 @@ namespace mupacity {
   <img class="bild" src="./images/beispiel8.png" >
   <img class="bild" src="./images/beispiel2.jpg" >
 </aside>
+<aside class="termine">
+
+<ul><p>Kommende Veranstaltung:</p>
+<li>03./04. August <br> Stuttgart</li><br>
+<p>Weitere Veranstaltungen:</p>
+<li>17./18. August <br> München</li>
+<li>31. August / 01. September <br> Hamburg</li>
+<li>13./14./15. September <br> Leipzig</li>
+<li>05./06. Oktober <br> Frankfurt</li>
+<li>19./20. Oktober <br> Erfurt</li>
+<li>26./27. Oktober <br> Köln</li>
+<li>09./10. November <br> Salzburg</li>
+</aside>
         <p class="infotext"> Music - Pattern - City <br> Das ist alles, was wir für unser Kunstprojekt brauchen. Und dich! <br>
         Kunst verbindet, Kunst schafft Erlebnisse und Kunst verändert. Das haben auch wir uns als Ziel gesetzt. Einen ganzen Tag lang wird deine Stadt
         in neuem Licht erstahlen und bist ein Teil davon. 
