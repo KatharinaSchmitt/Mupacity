@@ -168,13 +168,29 @@ footer ul li {
         order: 2; 
             flex: 1 1 auto;
         padding: 0;}
+        .home:hover {
+            cursor: pointer;
+            color:  rgb(186, 230, 237);
+        }
     .karte {order: 3;
             flex: 1 1 auto;}
+    .karte:hover {
+        cursor: pointer;
+        color:  rgb(186, 230, 237);
+        }
     .galerie {order: 4;
                 flex: 1 1 auto;}
+    .galerie:hover {
+        cursor: pointer;
+        color:  rgb(186, 230, 237);
+        }
     .feedback {order: 5;
-            flex: 1 1 auto;}
-
+            flex: 1 1 auto;
+        z-index: 100;}
+    .feedback:hover {
+        cursor: pointer;
+        color:  rgb(186, 230, 237);
+            }
     main {
         width: 80%;
         margin: 14rem 0 0;
@@ -202,6 +218,15 @@ footer ul li {
         width: 20%;
         font-size: 0.9rem;
     }
+    .liLogo{
+        list-style: none;
+    }
+    .logoSt {
+        width: 100%;
+        position: relative;
+        top: -1rem;
+        left: -2rem;
+    }
 
     .termine p {
         font-size: 1rem;
@@ -217,12 +242,20 @@ footer ul li {
         text-align: center;
         margin: 0 0 2rem 7rem;
         text-transform: uppercase;
+        font-size: 3em;
+        text-shadow: 3px 2px #5ac995;
     }
+
+    h1::first-letter{
+        text-shadow: 3px 2px #ff7573;
+    }
+    
     h2{
         clear: right;
         text-align: center;
         margin: 1rem 0 0 7rem;
         font-variant: small-caps;
+        letter-spacing: 2px;
     }
     .infotext {
         width: 60%;
@@ -303,17 +336,24 @@ footer ul li {
     #Mapskarte {
         width: 80%;
         display: block;
-        margin: auto;
         border: 2px solid #ff7573;
+        margin: 2rem 0 0 20rem;
+    }
+    .zweiteH1{
+        margin: 0 0 0 15rem;
+    }
+    .text2 {
+        margin: 5rem 0 -5rem 20rem;
     }
     #schloss {
-        width: 3%;
-        height: 5%;
+        position: relative;
+        left: 68%;
+        top: 25rem;
+        width: 5rem;
+        height: 5rem;
         background-color: transparent;
         border: transparent;
-        position: absolute;
-        top: 97%;
-        right:46%;
+
     }
 
     .SchlossKlavier {
@@ -324,18 +364,77 @@ footer ul li {
         top: 97%;
         right:46%;
         text-align: center;
+        background-color: rgb(255, 117, 115);
+        border-radius: 0.2rem;
+    }
+    .SchlossKlavier:hover {
+        cursor: pointer;
+        background-color: #faf085;
+    }
+
+    .logoS1{
+        position: absolute;
+        top: 8rem;
+        right: 4rem;
+        width:20%;
     }
 
     /*dritte seite*/
 
+    .zurück{
+        position: absolute;
+        top: 12rem;
+        left: 6rem;
+        background-color: #5ac995;
+        border-radius: 5rem;
+        border: 1px solid #5ac995;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        padding: 0.5rem 1rem;
+        font-size: 1.3em;
+    }
+    .zurück:hover {
+        cursor: pointer;
+    color: #faf085;
+    }
+
+    .logoS {
+        position: absolute;
+        bottom: 2rem;
+        right: 12rem;
+        width: 20%;
+    }
+
     .infoGebäude {
-        margin: 18% 0 0 0;
+        margin: 18% 0 10% 20%;
     }
 
     .neuesSchloss {
-        width: 50%;
-        float: right;
+        width: 30%;
+        position: absolute;
+        top: 14rem;
+        right: 13rem;
 
+    }
+    .piano {
+        width: 30%;
+        position: absolute;
+        top: 28rem;
+        left: 13rem;
+    }
+    .h22{
+        position: relative;
+        margin: 0 0 4% 0;
+
+    }
+    .p3{
+        width: 40%;
+        margin:  0 0 0 20%;
+        text-align: right;
+    }
+    .p32{
+        width: 40%;
+        margin:  7% 0 0 50%;
+        text-align: left;
     }
 
     

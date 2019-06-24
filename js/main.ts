@@ -19,7 +19,7 @@ namespace mupacity {
 <aside class="termine">
 
 <ul><p>Kommende Veranstaltung:</p>
-<li>03./04. August <br> Stuttgart</li><br>
+<li class="liLogo"><img class="logoSt" src="./images/MupaS.PNG"></li><br>
 <p>Weitere Veranstaltungen:</p>
 <li>17./18. August <br> München</li>
 <li>31. August / 01. September <br> Hamburg</li>
@@ -48,8 +48,9 @@ namespace mupacity {
         </div>`
         startseite.innerHTML = inhalt;
         document.getElementById("inhalt").appendChild(startseite);
-
         document.getElementById("maps").addEventListener("click", zeigeMaps);
+        document.getElementById("home").addEventListener("click", init);
+        document.getElementById("karte").addEventListener("click", zeigeMaps);
     }
 
     function zeigeMaps(): void {
@@ -57,16 +58,19 @@ namespace mupacity {
         document.getElementById("inhalt").appendChild(startseite);
         startseite = document.createElement("div");
         let inhalt: string = `
-        <h1>Karte</h1>
-        <p>Erkunden Sie die Stadt und finden Sie den passenden Ort und das passende Instrument für Sie!</p>
+        <h1 class="zweiteH1">Karte</h1>
+        <p class="text2">Erkunden Sie die Stadt und finden Sie den passenden Ort und das passende Instrument für Sie!</p>
+        <button id="schloss"></button>
             <img id="Mapskarte" src="./images/Stuttgart.PNG">
-            <button id="schloss"></button>
+            
             <div id="infoSchloss"></div>
+            <img class="logoS1" src="./images/MupaS.PNG">
        `
         startseite.innerHTML = inhalt;
         document.getElementById("inhalt").appendChild(startseite);
 
         document.getElementById("schloss").addEventListener("click", infoKarte);
+        document.getElementById("home").addEventListener("click", init);
     }
 
     function infoKarte(): void {
@@ -74,7 +78,6 @@ namespace mupacity {
         let inhalt: string = `
         <div class="SchlossKlavier" id="SchlossInfo">
         <p>Klavier - Neues Schloss</p>
-        <a href="">weitere Informationen</a>
         </div>
        `
         stelleInfo.innerHTML = inhalt;
@@ -88,15 +91,24 @@ namespace mupacity {
         document.getElementById("inhalt").appendChild(startseite);
         startseite = document.createElement("div");
         let inhalt: string = `
+        <p class="zurück" id="zurück">zurück zur Karte</p>
+        <img class="logoS" src="./images/MupaS.PNG">
         <div class="infoGebäude">
         <img class ="neuesSchloss" src="./images/neuesSchloss.jpg">
-        <h1> Das Neue Schloss</h1>
-        <p>Die einstige Residenz der württembergischen Herzöge und Könige bildet, 
+        <h2 class="h22"> Das Neue Schloss</h2>
+        <p class="p3">Die einstige Residenz der württembergischen Herzöge und Könige bildet, 
         zusammen mit dem Alten Schloss und dem Schlossplatz, das städtebauliche Zentrum der Landeshauptstadt. 
         Heute noch dienen die prunkvollen Räume der Repräsentation des Landes.</p>
+        <p class="p32">An unserem Klavier kannst du dem Neuen Schloss eine bunte Fassade zaubern. <br>
+        Komm vorbei und spiel!</p>
+        <img class ="piano" src="./images/piano.jpg">
         </div>
        `
         startseite.innerHTML = inhalt;
         document.getElementById("inhalt").appendChild(startseite);
+
+        document.getElementById("zurück").addEventListener("click", zeigeMaps);
+        document.getElementById("home").addEventListener("click", init);
+        document.getElementById("karte").addEventListener("click", zeigeMaps);
     }
 }
